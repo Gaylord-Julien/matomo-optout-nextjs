@@ -16,6 +16,7 @@
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build && husky install",
+    "make-pretty": "prettier --write '**/*.{js,jsx,ts,tsx}'",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "build-tailwind": "NODE_ENV=production npx tailwindcss -o ./dist/tailwind.css --minify"
