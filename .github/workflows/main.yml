@@ -20,7 +20,8 @@ jobs:
           node-version: ${{ matrix.node }}
 
       # Run `yarn upgrade`
-      - uses: browniebroke/yarn-upgrade-action@v1
+      - name: Upgrade NPM
+        run: npm install -g npm yarn
 
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
