@@ -1,9 +1,9 @@
 import React from 'react';
-const { useCookies } = require('react-cookie');
 import Checkbox from '@mui/material/Checkbox';
 import Typography from '@mui/material/Typography';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { useEffect, useState } from 'react';
+const { useCookies } = require('react-cookie');
 
 const OptIn: React.FC<{
   doNotTrack: IOptIn['doNotTrack'];
@@ -19,7 +19,7 @@ const OptIn: React.FC<{
     if (!cookies.tracker) {
       setChecked(false);
     }
-  }, []);
+  }, [cookies.tracker]);
 
   const label = {
     inputProps: {

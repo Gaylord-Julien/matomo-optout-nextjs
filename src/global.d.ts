@@ -1,8 +1,8 @@
 declare global {
-    interface IOptIn {
-        doNotTrack: string;
-        trackMe: string;
-    }
+  interface IOptIn {
+    doNotTrack: string;
+    trackMe: string;
+  }
 }
 
-export { };
+export {};
