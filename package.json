@@ -1,5 +1,5 @@
 {
-  "version": "0.1.12",
+  "version": "0.1.15",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -21,7 +21,8 @@
     "build-tailwind": "NODE_ENV=production npx tailwindcss -o ./dist/tailwind.css --minify"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16",
+    "next": ">=9.0.0"
   },
   "husky": {
     "hooks": {
@@ -35,8 +36,18 @@
     "trailingComma": "es5"
   },
   "name": "matomo-optout-nextjs",
-  "author": "Zharkan",
+  "author": "Gaylord Julien",
   "module": "dist/matomo-opt-out-nextjs.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaylord-julien/matomo-optout-nextjs.git"
+  },
+  "description": "Opt out of Matomo tracking for Next.js",
+  "keywords": [
+    "matomo",
+    "optout",
+    "nextjs"
+  ],
   "size-limit": [
     {
       "path": "dist/matomo-opt-out-nextjs.cjs.production.min.js",
